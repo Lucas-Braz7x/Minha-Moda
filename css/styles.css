@@ -8,6 +8,18 @@ html{
   box-sizing: border-box;
 }
 
+.sr-only{
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 header{
   display: flex;
   justify-content: space-between;
@@ -42,6 +54,7 @@ header > a > img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 
   height: 100vh;
 
@@ -50,9 +63,40 @@ header > a > img {
   background-attachment: fixed;
 }
 
+.form-header{
+  text-align: center;
+  color: #fff;
+}
+
+.form-header h1{
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.form-header h3{
+  font-size: 1.8rem;
+  
+}
+
 .form{
   display: flex;
   flex-direction: column;
+  
+  max-width: 320px;
+  width: 100%;
+  
+  
+}
+
+.form > input{
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+.form > button{
+  height: 40px;
+  border-radius: 20px;
+  color: #fff;
 }
 
 .card-container{

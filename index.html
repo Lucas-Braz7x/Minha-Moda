@@ -16,15 +16,24 @@
         <li><a href="">Produtos</a></li>
         <li><a href="">Lojas</a></li>
         <li><a href="">Sobre</a></li>
+        <li id="shopping-cart"><a href="">Sobre</a></li>
       </ul>
     </header>
     <div class="content">
       <section class="form-wrapper">
+        <div class="form-header">
+          <h1>Se você ama moda e se vestir bem, você veio ao lugar certo!</h1>
+          <h3>Cadastre-se e não fique de fora do mundo da moda, venha para Minha&Moda.</h3>
+        </div>
         <form class="form" action="">
-          <label for="name">Nome: </label>
-          <input type="text" class="name">
-          <label for="name">Email: </label>
-          <input type="text" class="email">
+          <label class="sr-only" for="name">Nome: </label>
+          <input type="text" id ="name" class="name" placeholder="Digite o seu nome" required>
+          <label class="sr-only" for="name">Email: </label>
+          <input type="email" id ="email" class="email" placeholder="Digite o seu email" required>
+          <label class="sr-only" for="adress">Endereço: </label>
+          <input type="text" id ="adress" class="adress" placeholder="Digite o seu endereço" required>
+          <label class="sr-only" for="numberPhone">Telefone: </label>
+          <input type="number" id ="numberPhone" class="numberPhone" placeholder="Digite o seu numero" required>
           <button>Cadastrar</button>
         </form>
       </section>
