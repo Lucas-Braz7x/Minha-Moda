@@ -35,7 +35,7 @@ buttonBuy.forEach(buttonBuys => {
     
     const shoppingCart = document.getElementById('shopping-cart');
     cartPrice += parseFloat(buttonBuys.value).toFixed(2);
-    console.log(cartPrice.toFixed(2));
+    console.log(cartPrice);
     if(cartPrice != 0){
       shoppingCart.innerHTML = `<a href="">R$ ${cartPrice}</a>` 
     }

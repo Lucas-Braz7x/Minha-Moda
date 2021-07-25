@@ -36,9 +36,50 @@ header > ul{
   list-style: none;
 }
 
+header > ul > li{
+  transition: 0.5s;
+}
+
 header > ul > li > a{
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+header ul:hover li > a{
+  transform: scale(1.5);
+  opacity: .2;
+  filter: blur(5px);
+}
+header ul li:hover{
+  transform: scale(1.5);
+}
+header ul li > a:hover{
+  transform: scale(2);
+  opacity: 1;
+  filter: blur(0);
+}
+
+header ul li > a:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:  100%;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  transition: transform 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1;
+}
+
+header ul li > a:hover:before{
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 header > a > img { 
