@@ -25,3 +25,33 @@ function handleSend(){
   alert(`Cliente cadastrardo com sucesso!
   Nome: ${cliente.name}`)
 }
+
+const buttonBuy = document.querySelectorAll('.button-buy');
+var cartPrice = 0.0;
+buttonBuy.forEach(buttonBuys => {
+  
+  buttonBuys.addEventListener('click', button =>{
+    console.log(buttonBuys.value);
+    
+    const shoppingCart = document.getElementById('shopping-cart');
+    cartPrice += parseFloat(buttonBuys.value).toFixed(2);
+    console.log(cartPrice.toFixed(2));
+    if(cartPrice != 0){
+      shoppingCart.innerHTML = `<a href="">R$ ${cartPrice}</a>` 
+    }
+  })
+})
+
+/* function handlePrice(){
+  let cartPrice = 0.0;
+  let clicked = false
+  const shoppingCart = document.getElementById('shopping-cart');
+ /*  if(clicked){
+    background: 
+  } 
+  if(cartPrice != 0){
+    shoppingCart.innerHTML = `<a href="">R$ ${cartPrice}</a>` 
+  }
+
+}
+ */
