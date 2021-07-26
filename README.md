@@ -19,8 +19,11 @@
   - JS
     - Salvar dados no localStorage
     - Preços no carrinho de comprar dinâmico
+  - Deploy:
+    - Netlify   
 
 # Como rodar: 
   - Como o projeto é simples, basta baixar os arquivos e clicar no index.html ou baixar a extensão do Vscode "LiveServer" e rodar por ela.
 
 # Link da aplicação:
+- https://minha-moda.netlify.app/
