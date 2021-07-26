@@ -46,17 +46,3 @@ buttonBuy.forEach(buttonBuys => {
     
   })
 })
-
-/* function handlePrice(){
-  let cartPrice = 0.0;
-  let clicked = false
-  const shoppingCart = document.getElementById('shopping-cart');
- /*  if(clicked){
-    background: 
-  } 
-  if(cartPrice != 0){
-    shoppingCart.innerHTML = `<a href="">R$ ${cartPrice}</a>` 
-  }
-
-}
- */
