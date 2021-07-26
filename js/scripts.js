@@ -28,17 +28,21 @@ function handleSend(){
 
 const buttonBuy = document.querySelectorAll('.button-buy');
 var cartPrice = 0.0;
+var i = 0;
+var clicked = false;
+
 buttonBuy.forEach(buttonBuys => {
   
   buttonBuys.addEventListener('click', button =>{
+    clicked = true;
     console.log(buttonBuys.value);
-    
-    const shoppingCart = document.getElementById('shopping-cart');
-    cartPrice += parseFloat(buttonBuys.value).toFixed(2);
-    console.log(cartPrice);
-    if(cartPrice != 0){
-      shoppingCart.innerHTML = `<a href="">R$ ${cartPrice}</a>` 
+    cartPrice = buttonBuys.value;
+    localStorage.setItem(`compra${i}`, JSON.stringify(cartPrice));
+    i++;
+    if(!clicked){
+      buttonBuys.style.background="grey";
     }
+    
   })
 })
 
