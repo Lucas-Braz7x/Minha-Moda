@@ -39,7 +39,8 @@ buttonBuy.forEach(buttonBuys => {
     cartPrice = buttonBuys.value;
     localStorage.setItem(`compra${i}`, JSON.stringify(cartPrice));
     i++;
-    if(!clicked){
+    alert(`Produto no valor: ${cartPrice} Foi adicionado no carrinho!` )
+    if(clicked){
       buttonBuys.style.background="grey";
     }
     
